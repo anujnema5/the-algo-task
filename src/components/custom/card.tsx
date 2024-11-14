@@ -45,11 +45,11 @@ const ConsultationCard = ({ consultation }: { consultation: typeof upcomingConsu
         </div>
         <div className="consultation-time " >
             <div className="date-time">
-                <CalendarDaysIcon className="h-6 w-6 text-gray-500" />
+                <CalendarDaysIcon className="consultation-icons" />
                 <span>{consultation.date}</span>
             </div>
             <div className="date-time">
-                <ClockIcon className="h-6 w-6 text-gray-500" />
+                <ClockIcon className="consultation-icons" />
                 <span>{consultation.time}</span>
             </div>
         </div>

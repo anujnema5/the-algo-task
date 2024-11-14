@@ -212,8 +212,10 @@ body {
   grid-column: span 4;
 }
 
-.consultation-section {
-  /* max-height: 280px; */
+.consultation-icons {
+  height: 1.3rem; 
+  width: 1.3rem;  
+  color: #6b7280; 
 }
 
 /* Card Headers */

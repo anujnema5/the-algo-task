@@ -12,8 +12,6 @@ import {
 } from 'react-icons/fa';
 import { Doctor } from '../components/pages/dashboard/dashboard.types';
 
-
-
 export const doctors: Doctor[] = [
     {
         name: "Dr. Darlene Robertson",
