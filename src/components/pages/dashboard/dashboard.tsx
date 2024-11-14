@@ -6,7 +6,7 @@ import {
     medications,
     popularProducts,
     upcomingConsultation
-} from '../../../data';
+} from '../../../data/data';
 
 import {
     CardHeader,
@@ -27,7 +27,6 @@ import {
     Product
 } from './dashboard.types';
 import DashboardSkeleton from '../../skeletons/dashboard-skelteton';
-import './dashboard.module.css'
 
 const DashboardSection = ({ className, children, isSmallCard = false }: {
     className: string; children: React.ReactNode; isSmallCard?: boolean;

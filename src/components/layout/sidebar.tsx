@@ -1,6 +1,5 @@
-import { navItems } from "../../data";
+import { navItems } from "../../data/data";
 import Logo from '../../assets/logo.png'
-import './sidebar-layout.css'
 
 const Sidebar = () => (
     <aside className="sidebar">

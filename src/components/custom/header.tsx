@@ -1,6 +1,5 @@
 import { Search } from "lucide-react";
 import { FaBell } from "react-icons/fa";
-import './header.module.css'
 
 const Header = () => (
     <header className="header">

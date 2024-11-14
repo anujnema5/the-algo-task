@@ -1,10 +1,9 @@
 import { CalendarDaysIcon, ClockIcon } from "@heroicons/react/24/outline";
-import { doctors, healthPackages, popularProducts } from "../../data";
-import { upcomingConsultation } from "../../data";
+import { doctors, healthPackages, popularProducts } from "../../data/data";
+import { upcomingConsultation } from "../../data/data";
 import { IoIosArrowForward, IoIosStar } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MoreHorizontal } from "lucide-react";
-import './card.module.css'
 
 const CardHeader = ({ title, link = "View all" }: { title: string; link?: string }) => (
     <div className="card-header">

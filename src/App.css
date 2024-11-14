@@ -48,7 +48,7 @@ body {
   text-decoration: none;
   border-radius: 10px;
   transition: background-color 0.3s ease;
-  gap: 15px;
+  gap: 14px;
 }
 
 .menu-item.active {

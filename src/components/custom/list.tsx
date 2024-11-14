@@ -1,4 +1,4 @@
-import { medications } from "../../data";
+import { medications } from "../../data/data";
 
 const MedicationsList = ({ medicationList }: { medicationList: typeof medications }) => (
     <div className="medications-list">
