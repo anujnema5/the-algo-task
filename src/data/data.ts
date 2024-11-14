@@ -10,7 +10,8 @@ import {
     FaEnvelope,
     FaMoneyBill, FaCog
 } from 'react-icons/fa';
-import { Doctor } from './components/pages/dashboard/dashboard.types';
+import { Doctor } from '../components/pages/dashboard/dashboard.types';
+
 
 
 export const doctors: Doctor[] = [
