@@ -134,7 +134,7 @@ const Dashboard = () => {
 
                             {dashboardData.consultation && (
                                 <DashboardSection className="consultation-section" isSmallCard>
-                                    <CardHeader title="Upcoming Consultation" />
+                                    <CardHeader title="Upcoming Consultation" showLink={false} />
                                     <ConsultationCard consultation={dashboardData.consultation} />
                                 </DashboardSection>
                             )}

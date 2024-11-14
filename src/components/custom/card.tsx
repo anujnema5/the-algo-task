@@ -5,13 +5,15 @@ import { IoIosArrowForward, IoIosStar } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { MoreHorizontal } from "lucide-react";
 
-const CardHeader = ({ title, link = "View all" }: { title: string; link?: string }) => (
+const CardHeader = ({ title, link = "View all", showLink = true }: { title: string; link?: string, showLink?: boolean }) => (
     <div className="card-header">
         <h3 className="card-title">{title}</h3>
-        <a href="#" className="card-link" style={{}}>
-            {link}
-            <IoIosArrowForward />
-        </a>
+        {showLink &&
+            <a href="#" className="card-link" style={{}}>
+                {link}
+                <IoIosArrowForward />
+            </a>
+        }
     </div>
 );
 
@@ -81,7 +83,7 @@ const ProductCard = ({ product }: { product: typeof popularProducts[0] }) => (
 const DoctorCard = ({ doctor }: { doctor: typeof doctors[0] }) => (
     <div className="doctor-card">
         {/* <div className="doctor-avatar" /> */}
-        <img src={doctor.imgSrc} alt="" className="doctor-avatar"/>
+        <img src={doctor.imgSrc} alt="" className="doctor-avatar" />
         <div className="doctor-info">
             <p className="doctor-name">{doctor.name}</p>
             <p className="doctor-specialty">{doctor.specialty}</p>
