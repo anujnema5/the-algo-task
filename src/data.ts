@@ -1,55 +1,65 @@
-// src/data.ts
 
-// Sample data for doctors
-export const doctors = [
+import {
+    FaHome,
+    FaCalendarCheck,
+    FaFlask,
+    FaPills,
+    FaHeart,
+    FaUserFriends,
+    FaFileMedical,
+    FaEnvelope,
+    FaMoneyBill, FaCog
+} from 'react-icons/fa';
+import { Doctor } from './components/pages/dashboard/dashboard.types';
+
+
+export const doctors: Doctor[] = [
     {
-        name: "Dr. Amelia Brown",
-        specialty: "Cardiologist",
-        rating: 4.8,
-        reviews: 120,
+        name: "Dr. Darlene Robertson",
+        specialty: "Dental Specialist",
+        rating: 5.0,
+        reviews: 50,
+        imgSrc: 'https://img.freepik.com/premium-photo/doctor-digital-avatar-generative-ai_934475-9326.jpg'
     },
     {
-        name: "Dr. Ethan Clark",
-        specialty: "Dermatologist",
-        rating: 4.5,
-        reviews: 98,
-    },
-    {
-        name: "Dr. Olivia Smith",
-        specialty: "Pediatrician",
-        rating: 4.7,
-        reviews: 150,
-    },
-    {
-        name: "Dr. Mason Lee",
-        specialty: "Orthopedic Surgeon",
+        name: "Dr. Darrell Steward",
+        specialty: "Heart Specialist",
         rating: 4.9,
-        reviews: 75,
+        reviews: 50,
+        imgSrc: 'https://img.freepik.com/premium-photo/doctor-digital-avatar-generative-ai_934475-9326.jpg'
     },
+    {
+        name: "Dr. Cameron Williamson",
+        specialty: "Dental Specialist",
+        rating: 5.0,
+        reviews: 80,
+        imgSrc: 'https://img.freepik.com/premium-photo/doctor-digital-avatar-generative-ai_934475-9326.jpg'
+    },
+    {
+        name: "Dr. Darlene Robertson",
+        specialty: "Dental Specialist",
+        rating: 5.0,
+        reviews: 80,
+        imgSrc: 'https://img.freepik.com/premium-photo/doctor-digital-avatar-generative-ai_934475-9326.jpg'
+    }
 ];
 
-// Sample data for medications
 export const medications = [
     {
-        name: "Amoxicillin",
+        name: "Acetaminophen",
         dosage: "500 mg",
-        instructions: "Take one tablet every 8 hours for 7 days.",
+        instructions: "Take with food every morning"
     },
     {
-        name: "Ibuprofen",
-        dosage: "200 mg",
-        instructions: "Take one tablet every 6-8 hours as needed for pain.",
+        name: "Doxycycline",
+        dosage: "100 mg",
+        instructions: "Take 1 with food twice a day, and avoid drinking alcohol for 2 hours after"
     },
     {
-        name: "Atorvastatin",
-        dosage: "10 mg",
-        instructions: "Take one tablet daily with food.",
-    },
-    {
-        name: "Lisinopril",
-        dosage: "20 mg",
-        instructions: "Take one tablet daily for blood pressure control.",
-    },
+        name: "Hydrochlorothiazide",
+        dosage: "23 mg",
+        instructions: "Take 3 tablets, 3 times a day for 7 days"
+    }
 ];
 
 export const popularProducts = [
@@ -83,13 +93,7 @@ export const healthPackages = [
         name: "Fever Panel",
         description: "Ideal for individuals aged 21-40...",
         icon: "F"
-    },
-
-    {
-        name: "Fever Panel",
-        description: "Ideal for individuals aged 21-40...",
-        icon: "F"
-    },
+    }
 ];
 
 export const upcomingConsultation = {
@@ -99,5 +103,19 @@ export const upcomingConsultation = {
         avatar: "/doctor-avatar.png"
     },
     date: "27 Oct 2021",
-    time: "11:00 - 12:00 AM"
+    time: "11:00 - 12:00 AM",
+    imgSrc: "https://img.freepik.com/premium-photo/dentist-digital-avatar-generative-ai_934475-9021.jpg"
 };
+
+export const navItems = [
+    { Icon: FaHome, text: "Home" },
+    { Icon: FaCalendarCheck, text: "Appointment" },
+    { Icon: FaFlask, text: "Lab Tests" },
+    { Icon: FaPills, text: "Medicine Order" },
+    { Icon: FaHeart, text: "Favourites" },
+    { Icon: FaUserFriends, text: "Family" },
+    { Icon: FaFileMedical, text: "Prescription" },
+    { Icon: FaEnvelope, text: "Messages" },
+    { Icon: FaMoneyBill, text: "Payments" },
+    { Icon: FaCog, text: "Settings" }
+];

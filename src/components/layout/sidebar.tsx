@@ -1,27 +1,23 @@
-import React from 'react';
-import { FaHome, FaFlask, FaUserMd, FaHeart, FaPills, FaUserFriends, FaCommentDots, FaMoneyBill, FaCog } from 'react-icons/fa';
+import { navItems } from "../../data";
 import Logo from '../../assets/logo.png'
+import './sidebar-layout.css'
 
-const Sidebar: React.FC = () => {
-    return (
-        <div className="sidebar">
-            <div className="">
-                {/* <h2 className='logo'>Medik</h2> */}
-                <img src={Logo} alt="" className='logo'/>
-                <ul>
-                    <li><FaHome /> Home</li>
-                    <li><FaFlask /> Lab Tests</li>
-                    <li><FaUserMd /> Medicine Order</li>
-                    <li><FaHeart /> Favourites</li>
-                    <li><FaUserFriends /> Family</li>
-                    <li><FaPills /> Prescription</li>
-                    <li><FaCommentDots /> Messages</li>
-                    <li><FaMoneyBill /> Payments</li>
-                    <li><FaCog /> Settings</li>
-                </ul>
-            </div>
-        </div>
-    );
-};
+const Sidebar = () => (
+    <aside className="sidebar">
+        <img src={Logo} alt="" className="logo" />
+        <nav className="menu">
+            {navItems.map((item, index) => (
+                <a
+                    key={item.text}
+                    href="#"
+                    className={`menu-item ${index === 0 ? "active" : ""}`}
+                >
+                    <item.Icon className='sidebar-icon' />
+                    {item.text}
+                </a>
+            ))}
+        </nav>
+    </aside>
+);
 
 export default Sidebar;
