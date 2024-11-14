@@ -295,6 +295,11 @@ body {
   gap: 5px;
 }
 
+.doctor-rating span {
+  margin-top: 0.07rem;
+  font-size: 13.5px;
+}
+
 .doctor-card-arrow {
   position: absolute;
   right: 10px;

@@ -89,7 +89,9 @@ const DoctorCard = ({ doctor }: { doctor: typeof doctors[0] }) => (
             <p className="doctor-specialty">{doctor.specialty}</p>
             <p className="doctor-rating" style={{ position: "relative" }}>
                 <IoIosStar />
-                {doctor.rating} • {doctor.reviews}+ Reviews
+                <span>
+                    {doctor.rating} • {doctor.reviews}+ Reviews
+                </span>
                 <FaArrowRightLong className='doctor-card-arrow' />
             </p>
         </div>
